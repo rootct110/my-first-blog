@@ -1,24 +1,641 @@
+<!doctype html>
 <html>
-    <head>
-        <title>Rootct</title>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Rootct</a></h1>
-        </div>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+	<link rel="stylesheet" href="fontawesome-free-5.10.1-web/fontawesome-free-5.10.1-web/css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+		body{
+			height: 3000px;
+			font-family: 'Lato', sans-serif;
+			line-height: 1.5;
+		}
+		.navbar{
+			background-color:#212121 !important;
+			border-radius: 0;
+			height: 50px;
+			box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+		}
+		.navbar ul li a{
+			display: block;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 700;
+			line-height: 20px;
+			margin: 6px 15px;
+		}
+		.navbar ul li a:hover{
+			color: #eb8100 !important;
+		}
+		.img-logo{
+			width: 196.533px;
+			margin-left: -1px;
+			margin-top: -4px;
+		}
+		.brand-label{
+			border: 1px solid #2c6AA0;
+			border-radius: 5px;
+			font-size: 12px;
+			font-weight: 500;
+			letter-spacing: 2px;
+			font-family: 'Lato' , sans-serif;
+			color: #fff;
+			letter-spacing: 0.04em;
+			padding: 4px 12px;
+			margin-left: 15px;
+		}
+		.brand-label span{
+			text-transform: capitalize;
+		}
+	
+		.dropdown-menu{
+			background-color: #343A40;
+			margin: 0;
+		}
+		.dropdown-menu li:hover{
+			background-color: #343A40;
+		}
+		.custom-dropdown ul li a{
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #fff;
+			margin: 0;
+		}
+		.nav-link{
+			text-transform: uppercase;
+			color: #fff !important;
+		}
+		.login a{
+			border: solid 1px #F7951E;
+			border-radius: 5px;
+			padding: 7px 16px !important;
+			margin-right: -2px !important;
+		}
+		.login a:hover{
+			border: solid 1px #eb8100;
+			color: #eb8100 !important;
+		}
+		.home-bg{
+			background-image: url("img/mountain-city-compressed.jpg");
+			height: 650px;
+			background-size: cover;
+			background-position: center;
+		}
+		.bg-overlay{
+			background-color: rgba(0, 0, 0, 0.75);
+			width: 100%;
+			height: inherit;
+			position: absolute;
+		}
+		.title{
+			font-size: 2.8em;
+			color: #fff;
+			letter-spacing: 1px;
+			line-height: 50px;
+			margin-bottom: 0;
+			position: relative;
+			max-width: 800px;
+			margin-top: 150px;
+		}
+		.section{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			position: relative;
+		}
+		.home-p{
+			color: #D5D5D5;
+			font-size: 1.2rem;
+			line-height: 28px;
+			padding-top: 1.5rem !important;
+			margin: 0;
+			font-weight: 500 !important;
+			letter-spacing: 1px;
+			height: 650px;
+		}
+		.custom-div{
+			position: relative;
+  			width: 100%;
+  			min-height: 1px;
+  			padding-right: 15px;
+  			padding-left: 15px;
+		}
+		.s-block{
+			background-color: white;
+   			border-top: 3px solid #F7951E;
+			padding: 30px 30px 60px 30px;
+			max-width: 400px;
+			margin-bottom: 20px;
+			border-bottom:1px solid rgba(0, 0, 0, 0.25);
+			border-left:1px solid rgba(0, 0, 0, 0.25);
+			border-right:1px solid rgba(0, 0, 0, 0.25);
+			transition: all .05s ease-in;
+		}
+		.s-block:hover{
+		    margin-top: -5px;
+		    box-shadow: 0px 10px 10px -5px gray;
+		}
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>شرکت فناوری ارتباطات ریشه (Root Communication Technology=RCT) با هدف ارائه خدمات فنی مهندسی در واحدهای فناوری اطلاعات، شبکه های رایانه ای و مراکز ذخیره سازی اطلاعات (دیتا سنتر) و همچنین تاًمین نیازهای کامل مشتریان خود در زمینه تبادل و امنیت اطلاعات در سال ۱۳۹۷ آغاز به فعالیت نمود و از ابتدای کار، ارائه خدماتی متمایز در عرصه فناوری اطلاعات و امنیت اطلاعات مبتنی بر راهکارهای نوین و جامع همگام با کشورهای پیشرفته را سرلوحه کار خود قرار داد. این شرکت با تکیه بر نیروهای متخصص خود و با تجربه مدیران ارشد شرکت در زمینه فناوری اطلاعات و ارتباطات، آمادگی دارد به منظور...</p>
-        </div>
+		.s-title{
+			text-transform: uppercase;
+			margin-top: 10px;
+			margin-bottom: 0;
+			height: 44px;
+		}
+		.s-title-border{
+			background-color: #F7951E;
+			width: 50px;
+			height: 1px;
+		}
+		.text-color{
+			color:#525151 !important;
+		}
+		.text-center{
+			text-align: center;
+			bottom: 0;
+		}
+		.orange {
+			color: #f7951e !important;
+		}
+		.orange2{
+			color: #f7951e !important;
+			font-size: 2rem;
+		}
+		.users-icon{
+			color: #f7951e !important;
+			font-size: 2rem !important;
+		}
+		.btn-custom{
+			background-color: #F7951E !important;
+			color: #fff !important;
+			border-radius:.25rem;
+			text-transform: uppercase;
+			padding: 12px 32.5px;
+			font-size: 12px;
+			font-weight: 400;
+		}
+		.btn-custom:hover{
+			background-color: #EF6C00 !important;
+			text-decoration: none;
+		}
+		.counter-v {
+			font-size: 2rem;
+			margin-bottom: 1px;
+			font-family: inherit;
+			font-weight: 500;
+			line-height: 1.1;
+			color: #fff;
+			text-align: center;
+		}
+		.counter-n{
+			color: #fff;
+			font-size: 1rem;
+		}
+		.trust{
+			color: #fff;
+			text-decoration:none !important;
+			text-align: left;
+		}
+		.img{
+			width: 85%;
+			margin-top: -30px;
+		}
+		.c-link{
+			text-decoration: none !important;
+			color: #f7951e !important;
+		}
+		.c-link:hover{
+			color: #ef6c00 !important;
+		}
+		.t-dark{
+			color: #fff;
+		}
+		.text-s{
+			color: #cccccc !important;
+		}
+		.h-category{
+   			margin-top: -430px;
+   			padding-left: 15px;
+   			padding-right: 15px;
+		}
+		.btn.h-category-link {
+			display: inline-block;
+			padding: 16px 20px 16px 20px;
+			border: 1px solid #F7951E;
+			background-color: rgba(0, 0, 0, 0.60);
+			border-radius: 5px;
+			color: white;
+			text-decoration: none;
+			font-size: 13px;
+			letter-spacing: 1px;
+			position: relative;
+			z-index: 1;
+			margin-right: 16px;
+		}
+		.btn.h-category-highlight {
+			background-color: #F7951E;
+			color: #252525;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="/#">
+				<img src="img/logo-original-horizontal.png" class="d-inline-block img-logo" alt="">
+				<div class="d-inline-block brand-label">
+					<span>
+						<strong>2</strong> free scans
+					</span>
+				</div>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mynav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/#">tools</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item" href="#"><a href="">information gathering</a></li>
+						<li class="dropdown-item" href="#"><a href="">web application testing</a></li>
+						<li class="dropdown-item" href="#"><a href="">cms tests</a></li>
+						<li class="dropdown-item" href="#"><a href="">infrastructure testing</a></li>
+						<li class="dropdown-item" href="#"><a href="">ssl tests</a></li>
+						<li class="dropdown-item" href="#"><a href="">exploit helpers & utiles</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="">features</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item"><a href="">scan through vpn</a></li>
+						<li class="dropdown-item"><a href="">scan scaling</a></li>
+						<li class="dropdown-item"><a href="">api access</a></li>
+						<li class="dropdown-item"><a href="">bulk scanning</a></li>
+						<li class="dropdown-item"><a href="">scan templates</a></li>
+						<li class="dropdown-item"><a href="">scan history</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">pricing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">customers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+					  blog
+					</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item" href="#"><a href="">security reaserch</a></li>
+						<li class="dropdown-item" href="#"><a href="">most popular</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+					  company
+					</a>
+				<ul class="dropdown-menu dropdown-content">
+					<li class="dropdown-item" href="#"><a href="">about</a></li>
+					<li class="dropdown-item" href="#"><a href="">team</a></li>
+					<li class="dropdown-item" href="#"><a href="">jobs</a></li>
+					<li class="dropdown-item" href="#"><a href="">contact</a></li>
+				</ul>
+				</li>
+					<li class="nav-item login">
+					<a class="nav-link" href="">login</a>
+				</li>
+			</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="home-bg">
+		<div class="bg-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="title">
+						<span>Powerful Penetration Testing Tools, Easy to Use</span>
+						<p class="home-p">
+							Pentest-Tools.com allows you to quickly discover and report vulnerabilities in websites and network infrastructures. We provide a set of <b>powerful</b> and <b>tightly integrated</b>  pentesting tools which enable you to perform easier, faster and more effective pentest engagements.
+						</p>
+					</h1>
+				</div>
+			</div>
+			<div class="row h-category">
+                      <a href="/#" class="btn h-category-link h-category-highlight">Scan your website</a>
+                      <a href="/#" class="btn h-category-link">Scan your network</a>
+                      <a href="/#" class="btn h-category-link">Discover Attack Surface</a>
+                      <div class="home-btn-all-tools">All Tools</div>
+            </div>
+		</div>
+		<div class="container pt-5">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<a href="/#" class="clients content-v">
+						<span class="trust mr-4">
+							<strong>trusted</strong> by
+							<br>
+							<strong>experts</strong> at:
+						</span>
+						<img src="img/clients2-compressed-500.png" class="img" width="50%" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section bg-light">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 text-center">
+					<h3>who is <b>Pentest-Tools.com</b> for</h3>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-xs-12 col-md-6 col-xl-3 justify-content-center custom-div">
+					<div class="text-center s-block">
+						<i class="fa fa-crosshairs users-icon"></i>
+							<h5 class="s-title">
+								Penetration
+								<br>
+								testers
+							</h5>
+						<div class="s-title-border mx-auto mt-4"></div>
+						<ul class="fa-ul">
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Quickly discover the attack surface of a target organization</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Easily find low-hanging fruits by just using your browser</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Bypass local network restrictions and scan from external IP addresses</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Create credible proof-of-concepts to prove the real risk of vulnerabilities</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Speed-up your pentesting engagements</p>
+                                </li>                                
+                            </ul>
+							<div>
+								<button title="sign up" class="btn btn-custom" href="#">sign up</button>
+							</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-xl-3 justify-content-center custom-div">
+					<div class="text-center s-block">
+						<i class="fa fa-code  users-icon"></i>
+							<h5 class="s-title">
+								system
+								<br>
+								administrators
+							</h5>
+						<div class="s-title-border mx-auto mt-4"></div>
+						<ul class="fa-ul">
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Verify the security of your Internet facing servers using already installed and configured security tools</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Present the results to management with easy to read reports</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Show your customers the scan reports and increase their trust in your services</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Periodically scan for vulnerabilities and get notified when new issues are discovered.</p>
+                                </li>                              
+                            </ul>
+							<div>
+								<button title="sign up" class="btn btn-custom" href="/#">sign up</button>
+							</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-xl-3 justify-content-center custom-div">
+					<div class="text-center s-block">
+						<i class="fa fa-code users-icon"></i>
+							<h5 class="s-title">
+								web
+								<br>
+								developers
+							</h5>
+						<div class="s-title-border mx-auto mt-4"></div>
+						<ul class="fa-ul">
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Check the security of your web applications by performing external security scans</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Find SQL injection, Cross-Site Scripting, OS Command Injection and many other high risk vulnerabilities</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Report the findings in a friendly format and present the results to management</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Integrate the security scans (via API) into your current software development lifecycle</p>
+                                </li>                    
+                            </ul>
+							<div>
+								<button title="sign up" class="btn btn-custom" href="/#">sign up</button>
+							</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-xl-3 justify-content-center custom-div">
+					<div class="text-center s-block">
+						<i class="fa fa-code users-icon"></i>
+							<h5 class="s-title">
+								business
+								<br>
+								owners
+							</h5>
+						<div class="s-title-border mx-auto mt-4"></div>
+						<ul class="fa-ul">
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Obtain a quick overview of your company's security posture</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Check if the IT team has done a good job in securing the perimeter</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Discover the internet exposure of your company as an attacker sees it</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check orange fa-li"></i>
+                                    <p class="text-color">Do a pre-audit to find and close the high risk issues before having a full security audit</p>
+                                </li>                               
+                            </ul>
+							<div>
+								<button title="sign up" class="btn btn-custom" href="/#">sign up</button>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section bg-dark">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<a href="/#" class="clients content-v">
+						<span class="trust mr-4">
+							<strong>trusted</strong> by
+							<br>
+							<strong>experts</strong> at:
+						</span>
+						<img src="img/clients2-compressed-500.png" class="img" width="50%" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 text-center pt-3 pb-3">
+                        <span class="counter-v">1mil+</span><br>
+                        <span class="counter-n">Users/year</span>
+                    </div>
+                    <div class="col-md-3 text-center pt-3 pb-3">
+                        <span class="counter-v">25+</span><br>
+                        <span class="counter-n">Tools</span>
+                    </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
+                    <div class="col-md-3 text-center pt-3 pb-3">
+                        <span class="counter-v">50k+</span><br>
+                        <span class="counter-n">Clients globally</span>
+                    </div>
+                    <div class="col-md-3 text-center pt-3 pb-3">
+                        <span class="counter-v">Countless</span><br>
+                        <span class="counter-n">Vulnerabilities Found</span>
+                    </div>
+                </div>
+            </div>
+	</section>
+	<section class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-12 text-center">
+                        <h2>Better vulnerability discovery, Faster pentest reporting</h2>
+                        <p>You get instant access to <b>custom vulnerability scanners</b> and innovative features that <b>simplify the security assessment process</b> and produce valuable results.<br>The platform helps you cover all the phases of a penetration test, from information gathering, website scanning, network scanning to exploitation and reporting.<br><a href="/#" class="c-link"><b>Explore all Features</b></a></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <img src="img/dashboard_laptop.png" width="100%" class="d-block mx-auto">
+                    </div>
+				</div>
+				<div class="row justify-content-center">
+                    <div class="text-center mt-4">
+                    	<a href="/#" class="btn btn-custom input-scan-btn btn-outline-custom" title="Sign up">CREATE YOUR ACCOUNT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+	<section class="section bg-dark t-dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h3>What you can do with <b>Pentest-Tools.com</b></h3>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-lg-4 pt-2">
+                        <div class="text-center p-2 pb-lg-0">
+                            <div class="orange2">
+                                <i class="fa fa-clock mb-2"></i>
+                            </div>
+                            <div class="pt-1">
+                                <h5>Quick security assessments</h5>
+                                <div class="mx-auto mt-4"></div>
+                                <p class="pt-3 text-s">Don't waste your time installing, configuring and running complex security tools. We have them all setup for you, just say what is your target and press the Start button. You will receive a friendly report containing detailed vulnerability information, including risk description, evidence and recommendations for improvement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-2">
+                        <div class="text-center p-2 pb-lg-0">
+                            <div class="orange2">
+                                <i class="fa fa-recycle mb-2"></i>
+                            </div>
+                            <div class="pt-1">
+                                <h5>Continuous security monitoring</h5>
+                                <div class="mx-auto mt-4"></div>
+                                <p class="pt-3 text-s">All the scanners from our platform can be scheduled to periodically test your systems for vulnerabilities. Since our tools are regularly updated, you can be sure that you don't miss critical vulnerabilities. The scan reports are sent directly to your inbox so you can quickly react when issues are found.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-2">
+                        <div class="text-center p-2 pb-lg-0">
+                            <div class="orange2">
+                                <i class="fa fa-compass mb-2"></i>
+                            </div>
+                            <div class="pt-1">
+                                <h5>Discover the attack surface and do passive scans</h5>
+                                <div class="mx-auto mt-4"></div>
+                                <p class="pt-3 text-s">Information gathering is crucial for planning a penetration test and for estimating the amount of work to be done. We have powerful reconnaissance tools which allow you to quickly discover the attack surface of an organization, passively scan for vulnerabilities and find the most promising targets. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-lg-4 pt-2">
+                        <div class="text-center p-2 pb-lg-0">
+                            <div class="orange2">
+                                <i class="fa fa-globe mb-2"></i>
+                            </div>
+                            <div>
+                                <h5>Bypass network restrictions</h5>
+                                <div class="mx-auto mt-4"></div>
+                                <p class="text-s">Even if you have all the tools on your machine, the local firewall of your network might block you from scanning external hosts. The only way around this is to scan from an external server and Pentest-Tools.com was designed just for that. Our servers have a fast and direct Internet connection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-2">
+                        <div class="text-center p-2 pb-lg-0">
+                            <div class="orange2">
+                                <i class="fa fa-user mb-2"></i>
+                            </div>
+                            <div>
+                                <h5>Third-party security evaluations</h5>
+                                <div class="mx-auto mt-4"></div>
+                                <p class="text-s">If you are a web development or an IT services company, you can easily use our platform to show your clients that you have correctly implemented all the necessary security measures. Our results are trusted by more than 50.000 clients in 40+ countries.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center p-2 pb-lg-0">
+                            <div class="orange2">
+                                <i class="fa fa-cubes mb-2"></i>
+                            </div>
+                            <div class=>
+                                <h5>Integrate security testing in your own tools</h5>
+                                <div class="mx-auto mt-4"></div>
+                                <p class="text-s">The API that we provide allows you to easily integrate the tools from our platform into your own systems and processes. This way you will benefit of the powerful scanning engines without having the trouble of running such scanners yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
 </html>
